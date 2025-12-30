@@ -1,0 +1,383 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "SVN-Gilroy", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/*---Phần header---*/
+.header{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    padding: 24px 0;
+    z-index: 100;
+    position: fixed;
+}
+.header-container{
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 20px;
+}
+.header-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header-logo{
+    height: 50px;
+    width: 174px;
+}
+.header-logo a{
+    width: 100%;
+    height: 100%;
+}
+.header-logo img{
+    width: 100%;
+    height: 100%;
+}
+.header-nav{
+    width: 794px;
+    height: 40px;
+}
+.header-nav-list{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+.header-nav-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.header-nav-item a{
+    color: white;
+}
+
+.header-action{
+    height: 40px;
+    width: 350px;
+}
+.header-action-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-action-item i{
+    font-size: 1.5rem;
+    color: white;
+}
+.header-nav-dropdown{
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 23px 10px 0px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: none;
+}
+.danhmuc:hover .header-nav-dropdown{
+    display: block;
+}
+.header-nav-dropdown-2{
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 23px 10px 0px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: none;
+}
+.thuonghieu:hover .header-nav-dropdown-2{
+    display: block;
+}
+.thanh_ngang-danhmuc{
+    position: absolute;
+    top: 50px;
+    left: 390px;
+    width: 180px;
+    height: 30px;
+}
+.thanh_ngang-danhmuc-2{
+    position: absolute;
+    top: 50px;
+    left: 769px;
+    width: 140px;
+    height: 30px;
+}
+.header-action-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+    z-index: 1999;
+}
+.header-action-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+}
+
+/*Phần banner và banner chạy vòng*/
+.banner-img{
+    position: relative;
+    top: 20px;
+}
+.banner-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 510px;
+    height: 100%;
+    background: rgba(29, 22, 22, 0.3);
+    opacity: 0.8;
+    backdrop-filter: blur(10px);
+    transform: scaleX(0);
+    transform-origin: left; 
+    animation: di_chuyen 1.5s ease forwards;
+}
+@keyframes di_chuyen{
+    to{
+        transform: scaleX(1);
+    }
+}
+.banner-overlay-text{
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+    animation: fadeIn 3s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    padding: 21px 0;
+    display: flex;
+    z-index: 99;
+    position: relative;
+    top: -46px;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.marquee-item {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.marquee-item span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 40px;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%); 
+    }
+}
+
+/* collection */
+.collection{
+    display: flex;
+    justify-content: center;
+    background-color: #111112;
+    height: 600px;
+}
+.contain{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+.container-box img{
+    height: 200px;
+    width: 290px;
+}
+.container-box{
+    width: 200px; 
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: gallery 20s linear infinite;
+    cursor: pointer;
+}
+
+.container-box span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(500px);
+    -webkit-box-reflect: below 2.5px linear-gradient
+    (transparent, transparent, rgba(3,3,3,0.2));
+}
+
+.container-box span img{
+    position: absolute;
+    border-radius: 10px;
+    border: 6px ridge #ccc;
+    border-radius: 10px;
+    -webkit-box-reflect: below 2.5px
+    linear-gradient(transparent, transparent, rgba(3,3,3,0.2));
+    border: 3px ridge #a5b1c2;
+    margin: 5px;
+}
+
+@keyframes gallery{
+    from{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    to{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+/*product*/
+.product{
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    padding-top: 40px;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 0fr);
+    gap: 8px;
+    text-align: center;
+}
+.parent_2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 0fr);
+    gap: 8px;
+    text-align: center;
+}
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 8;
+    grid-row-start: 3;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 10;
+    grid-row-start: 3;
+}
+
+.div6 {
+    grid-column: span 10 / span 10;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.div_text{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 340px;
+    position: relative;
+}
+
+.div_text img{
+    width: 245px; 
+    height: 220px; 
+    border-radius: 4px;
+}
+.div_text p{
+    text-align: left;
+    margin: 10px;
+    font-weight: 700;
+}
+.old-price{
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 8px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}

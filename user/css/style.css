@@ -1,0 +1,13 @@
+.header-action-login:hover{
+    background-color: rgb(179, 179, 179);
+    color: rgb(255, 255, 255);
+    z-index: 999;
+}
+.header-action-register:hover{
+    background-color: rgb(179, 179, 179);
+    color: rgb(255, 255, 255);
+}
+
+.header-nav-item a:hover{
+    color: rgb(225, 31, 31);
+}
