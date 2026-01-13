@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../fontawesome-free-7.0.1-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-wrapper">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="../img/logo.png" alt=""> 
+                        </a>
+                    </div>
+                    <div class="header-nav">
+                        <ul class="header-nav-list">
+                            <li class="header-nav-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="header-nav-item danhmuc"><a href="#">Danh mục laptop
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <div class="thanh_ngang-danhmuc"></div>
+                                <div class="header-nav-dropdown">
+                                    <ul class="header-nav-list" style="">
+                                        <li class="header-nav-item"><a href="#">Laptop Gaming</a></li>
+                                        <li class="header-nav-item"><a href="#">Laptop Văn Phòng</a></li>
+                                    </ul>
+                                </div></a>
+                            </li>
+                            <li class="header-nav-item"><a href="#">Sản phẩm mới nhất</a></li>
+                            <li class="header-nav-item thuonghieu"><a href="#">Thương hiệu
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <div class="thanh_ngang-danhmuc-2"></div>
+                                <div class="header-nav-dropdown-2">
+                                    <ul class="header-nav-list" style="">
+                                        <li class="header-nav-item"><a href="#">ASUS</a></li>
+                                        <li class="header-nav-item"><a href="#">Dell</a></li>
+                                        <li class="header-nav-item"><a href="#">Gigabyte</a></li>
+                                        <li class="header-nav-item"><a href="#">HP</a></li>
+                                        <li class="header-nav-item"><a href="#">MSI</a></li>
+                                        <li class="header-nav-item"><a href="#">Lenovo</a></li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                            <li class="header-nav-item"><a href="#">Hỗ trợ kỹ thuật</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-action">
+                        <div class="header-action-item">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <a href="login.html" class="header-action-login">
+                                Đăng nhập
+                            </a>
+                            <a href="register.html" class="header-action-register">
+                                Đăng kí
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <content class="id">
+        <div class="heading">
+            <div class="heading-text"><h1>Laptop gaming</h1></div>
+            <div class="heading-path">
+                <a href="index.html">Trang chủ</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="">Danh mục laptop</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <p>Laptop gaming</p>
+            </div>
+        </div>
+
+        <section class="product">
+            <div class="product__container">
+            
+                <!-- SIDEBAR -->
+                <aside class="product__sidebar">
+                    <form action="">
+
+                        <div class="product__filter">
+                            <input type="checkbox" id="category-toggle" class="product__toggle" checked>
+                            <label for="category-toggle" class="product__filter-title">
+                                Thương hiệu
+                                <span class="product__arrow">⌄</span>
+                            </label>
+                        
+                            <div class="product__filter-content">
+                                <label class="product__radio">
+                                    <input type="radio" name="category"> Asus
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="category"> Dell
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="category"> Gigabyte
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="category"> HP
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="category"> MSI
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="category"> Lenovo
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="product__filter">
+                            <input type="checkbox" id="ram-toggle" class="product__toggle" checked>
+                            <label for="ram-toggle" class="product__filter-title">
+                                Dung lượng RAM
+                                <span class="product__arrow">⌄</span>
+                            </label>
+
+                            <div class="product__filter-content">
+                                <label class="product__radio">
+                                    <input type="radio" name="ram"> 16GB
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="ram"> 24GB
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="ram"> 32GB
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="ram"> 256GB
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="product__filter">
+                            <input type="checkbox" id="ssd-toggle" class="product__toggle" checked>
+                            <label for="ssd-toggle" class="product__filter-title">
+                                Dung lượng SSD
+                                <span class="product__arrow">⌄</span>
+                            </label>
+
+                            <div class="product__filter-content">
+                                <label class="product__radio">
+                                    <input type="radio" name="ssd"> 32GB
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="ssd"> 256GB
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="ssd"> 1TB
+                                </label>
+                                <label class="product__radio">
+                                    <input type="radio" name="ssd"> 2TB
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="product__filter">
+                            <input type="checkbox" id="price-toggle" class="product__toggle" checked>
+                            <label for="price-toggle" class="product__filter-title">
+                                Giá
+                                <span class="product__arrow">⌄</span>
+                            </label>
+                        
+                            <div class="product__filter-content">
+                                <input type="number" placeholder="Giá từ..." class="product__price-input">
+                                <input type="number" placeholder="Đến giá..." class="product__price-input">
+                            
+                                
+                            </div>
+                        </div>
+                        <div class="product__price-actions">
+                            <button class="product__btn-filter">Lọc</button>
+                            <button type="reset" class="product__btn-reset">Đặt lại</button>
+                        </div>
+                    </form>
+                    
+                </aside>
+            
+                <!-- PRODUCT GRID -->
+                <div class="product__content">
+                    <div class="product__grid">
+                    
+                        <!-- ITEM -->
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                        <div class="product__item">
+                            <div class="product__image-wrapper">
+                                <a href="#">
+                                    <img src="../img/banner_1.jpg" class="product__image">
+                                    <button class="product__btn">Xem chi tiết</button>
+                                </a>
+                            </div>
+                            <a href="#"><h3 class="product__name">1861 Renaissance EDP</h3></a>
+                            <p class="product__price">5.500.000 ₫</p>
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+    </content>
+        
+    <footer class="id">
+        <div class="footer">
+            <div class="footer_contain">
+                <h3>HENRYDAILY_</h3>
+                <p style="width: 300px; color: white; line-height: 22px;">Chúng tôi tin rằng mỗi chiếc laptop không chỉ là một thiết bị công nghệ, mà còn là người bạn đồng hành trên hành trình học tập, làm việc và sáng tạo. Từ hiệu năng mạnh mẽ, thiết kế tinh tế đến độ bền bỉ theo thời gian, chúng tôi mong muốn mang đến những sản phẩm chất lượng, đáp ứng trọn vẹn mọi nhu cầu của bạn. Đam mê công nghệ và sự hài lòng của khách hàng chính là động lực để chúng tôi không ngừng hoàn thiện và phát triển.</p>
+            </div>
+            <div class="footer_contain">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="#">Bộ sưu tập gaming</a></li>
+                    <li><a href="#">Thương hiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Hỗ trợ kỹ thuật</a></li>
+                </ul>
+            </div>
+            <div class="footer_contain">
+                <h3>Sản phẩm</h3>
+                <ul>
+                    <li><a href="">Laptop gaming</a></li>
+                    <li><a href="">Laptop văn phòng</a></li>
+                </ul>
+            </div>
+            <div class="footer_contain">
+                <h3>Hệ thống cửa hàng</h3>
+                <ul>
+                    <h4 style="color: white;">Hà Nội</h4>
+                    <li><a href="">17 Ngõ 236 Khương Đình, Thanh Xuân, Hà Nội</a></li>
+                    <h4 style="color: white;">Thành phố Hồ Chí Minh</h4>
+                    <li><a href="">225F Trần Quang Khải, Tân Định, Quận 1, TP.HCM</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

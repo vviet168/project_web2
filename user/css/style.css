@@ -15,3 +15,11 @@
 .footer_contain a:hover{
     color: rgb(225, 31, 31);
 }
+
+.product__item a:hover{
+    color: rgb(225, 31, 31);
+}
+
+.heading-path a:hover{
+    color: rgb(225, 31, 31);
+}

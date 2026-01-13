@@ -143,147 +143,141 @@ a{
     color: white;
 }
 
-/*Phần banner*/
-.banner-img{
+/*Content*/
+.id{
     position: relative;
-    top: 20px;
+    top: 98px;
 }
-.banner-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 510px;
-    height: 100%;
-    background: rgba(29, 22, 22, 0.3);
-    opacity: 0.8;
-    backdrop-filter: blur(10px);
-    transform: scaleX(0);
-    transform-origin: left; 
-    animation: di_chuyen 1.5s ease forwards;
-}
-@keyframes di_chuyen{
-    to{
-        transform: scaleX(1);
-    }
-}
-.banner-overlay-text{
-    position: absolute;
-    top: 50%;
-    left: 120px;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
+/*Heading*/
+.heading{
+    padding: 47px 0;
     text-align: center;
-    width: 80%;
-    z-index: 1;
-    animation: fadeIn 3s ease-in-out;
 }
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.heading-text{
+    color: black;
 }
-
-
-.marquee-wrapper {
-    width: 100%;
-    overflow: hidden;
-    background: #000;
-    padding: 21px 0;
+.heading-text h1{
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+.heading-path{
     display: flex;
-    z-index: 99;
-    position: relative;
-    top: -46px;
+    justify-content: center;
 }
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-    animation: scroll 20s linear infinite;
+.heading-path a {
+    color: black;
 }
-
-.marquee-item {
-    display: flex;
-    flex-shrink: 0;
-}
-
-.marquee-item span {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0 40px;
-    white-space: nowrap;
-}
-
-@keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%); 
-    }
-}
-
-/*collection*/
-.collection{
-    height: 500px;
-    width: 100%;
-    background-color: #000000;
-    transform: translateY(-46.4px);
-}
-.collection_heading{
+.heading-path p {
     margin: 0;
-    padding: 35px 0;
-    color: white;
-    text-align: center;
-    font-family: Pacifico;
-    font-size: 2.5rem;
-}
-.collection_contain img{
-    height: 300px;
-    width: 490px;
-    border-radius: 5px;
-    margin: 5px;
-    -webkit-box-reflect: below 0.1px
-    linear-gradient(transparent,transparent, rgba(3,3,3,0.2));
-}
-.collection_contain{
-    padding: 10px;
-    display: flex; 
-    justify-content: space-between;
-}
-.card{
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-.collection_contain:hover > :not(:hover){
-    opacity: 0.3;
-}
-.card:hover{
-    transform: scale(1.1);
-    filter: grayscale(0%);
 }
 
-/*product*/
+/*Product*/
 .product{
-    width: 100%;
-    padding: 60px 0;
-    background-color: #fff;
+    background-color: #fafafa;
+
 }
 
+/*---------------------------*/
+
+
+/* ===== LAYOUT ===== */
+.product{
+    padding: 50px 0;
+}
 .product__container{
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+
+/* ===== SIDEBAR ===== */
+.product__sidebar{
+    width: 260px;
+}
+
+.product__filter{
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.product__filter-title{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.product__arrow{
+    transition: 0.3s;
+}
+
+/* Toggle logic */
+.product__toggle{
+    display: none;
+}
+.product__toggle:not(:checked) + .product__filter-title + .product__filter-content{
+    display: none;
+}
+.product__toggle:checked + .product__filter-title .product__arrow{
+    transform: rotate(180deg);
+}
+
+/* Filter content */
+.product__filter-content{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product__radio{
+    font-size: 15px;
+}
+
+/* Price */
+.product__price-input{
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}
+
+.product__price-actions{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.product__btn-filter{
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.product__btn-reset{
+    background: #fff;
+    border: 1px solid #000;
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* ===== PRODUCT GRID ===== */
+.product__content{
+    flex: 1;
 }
 
 .product__grid{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
+
+/* ITEM */
 .product__item{
     text-align: center;
     border: 1px solid black;
@@ -292,18 +286,17 @@ a{
 
 .product__image-wrapper{
     position: relative;
-    width: 100%;
     height: 300px;
-    background-color: #f2f2f2;
-    overflow: hidden;
+    background: #f3f3f3;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .product__image{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transition: 0.4s ease;
+    transition: 0.4s;
 }
 
 .product__btn{
@@ -312,64 +305,34 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 12px 28px;
-    border: none;
+    padding: 12px 26px;
     border-radius: 30px;
-    background-color: #000;
+    background: #000;
     color: #fff;
-    font-size: 14px;
-    cursor: pointer;
+    border: none;
     opacity: 0;
-    transition: 0.4s ease;
+    transition: 0.4s;
 }
 
+/* Hover */
 .product__image-wrapper:hover .product__image{
-    filter: blur(1px);
     opacity: 0.9;
+    filter: blur(1px);
 }
-
 .product__image-wrapper:hover .product__btn{
     opacity: 1;
 }
 
 .product__name{
     margin: 15px 0 8px;
-    font-size: 16px;
+}
+.product__price{
     font-weight: 500;
 }
 
-.product__price{
-    font-size: 15px;
-    color: #000;
-}
-
-/* Phân trang */
-.product__pagination{
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-}
-
-.product__page{
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-}
-
-.product__page--active{
-    font-weight: bold;
-}
-
-.product__dots{
-    font-size: 16px;
-}
-
-
-
 /*footer*/
 .footer{
+    
     width: 100%;
     height: 450px;
     background-color: #000;
