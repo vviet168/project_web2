@@ -7,7 +7,16 @@
     background-color: rgb(179, 179, 179);
     color: rgb(255, 255, 255);
 }
-
+.product_inf-text-done-identify:hover{
+    background-color: rgb(179, 179, 179);
+    color: rgb(255, 255, 255);
+}
+.product_inf-text-done-cart:hover{
+    background-color: rgb(179, 179, 179);
+}
+.product_inf-text-done-cart:hover span{
+    color: rgb(255, 255, 255);
+}
 .header-nav-item a:hover{
     color: rgb(225, 31, 31);
 }
